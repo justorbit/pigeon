@@ -2,7 +2,7 @@
 
 A tiny JavaScript helper for sending browser data to PHP using ordinary HTML form submissions. No `fetch()`, no API requests, no extra complexity.
 
-## 📦 Installation
+## Installation
 
 Add Pigeon.js to your HTML:
 
@@ -10,7 +10,7 @@ Add Pigeon.js to your HTML:
 <script src="https://cdn.jsdelivr.net/gh/justorbit/pigeon@main/pigeon.js"></script>
 ```
 
-## 📤 POST — Send Data
+## POST — Send Data
 
 Send JavaScript data to PHP using the POST method.
 
@@ -37,11 +37,10 @@ echo "You are " . $age . " years old.";
 
 PHP receives the values through `$_POST`.
 
-**Note:** A POST submission normally navigates to or reloads the target page. It doesn't run in the background.
 
 ---
 
-## 🔗 GET — Send Data Through the URL
+## GET — Send Data Through the URL
 
 Send data as URL parameters.
 
@@ -74,11 +73,10 @@ https://example.com/index.php?name=John&page=home
 
 **Use GET for:** Searches, filters, page selection, and other non-sensitive data.
 
-⚠️ Don't send passwords or other sensitive information through GET parameters. They can appear in browser history and server logs.
 
 ---
 
-## 📁 FILE — Upload a File
+## FILE — Upload a File
 
 Upload a file selected by the user.
 
@@ -120,13 +118,12 @@ Before using this example:
 - Generate a safe filename instead of blindly trusting the original filename.
 - Handle upload errors and missing files.
 
-⚠️ **Security:** Never trust uploaded files. Validate them on the server before saving or using them.
 
 **Compatibility:** The current `FILE()` implementation uses `DataTransfer` to attach a selected file to a form. Browser support can vary, so test it in your target browsers.
 
 ---
 
-## 📚 Quick Reference
+##  Quick Reference
 
 | Function | Purpose | PHP receiver |
 |---|---|---|
@@ -136,7 +133,7 @@ Before using this example:
 
 ---
 
-## 💡 Important Notes
+##  Important Notes
 
 - Pigeon.js uses ordinary HTML form submissions.
 - It doesn't require `fetch()` or manually written API requests.
