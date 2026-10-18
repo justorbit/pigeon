@@ -1,4 +1,4 @@
-# 🐦 Pigeon.js
+# 🕊️ Pigeon.js
 
 A tiny JavaScript helper for sending browser data to PHP using ordinary HTML form submissions. No `fetch()`, no API requests, no extra complexity.
 
@@ -144,6 +144,6 @@ Before using this example:
 
 ---
 
-## 🐦 Pigeon.js
+## 🕊️ Pigeon.js
 
 **Small helper. Simple communication. No `fetch()` required.**
